@@ -15,12 +15,12 @@
   }
   
 .emojiSlider {
-    width: 30px;
-    height: 30px; 
+    width: 80px;
+    height: 80px; 
     border-radius: 100px;
     position: relative;
     left: 50%;
-    top: -10px;
-    background: blue;
+    top: -40px;
+    background: url("assets/happy.png") center no-repeat;
     cursor: pointer;
   }
