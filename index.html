@@ -13,13 +13,14 @@
         
         <script>
             let thumb = slider.querySelector('.emojiSlider');
-        
+      
             thumb.onmousedown = function(event) {
+                console.log(event);
                 event.preventDefault(); // prevent selection start (browser action)
             
                 let shiftX = event.clientX - thumb.getBoundingClientRect().left;
                 // shiftY not needed, the thumb moves only horizontally
-        
+
                 document.addEventListener('mousemove', onMouseMove);
                 document.addEventListener('mouseup', onMouseUp);
         
@@ -38,11 +39,17 @@
                     thumb.style.left = newLeft + 'px';
                     }
             
-                    function onMouseUp() {
+                function onMouseUp() {
                     document.removeEventListener('mouseup', onMouseUp);
                     document.removeEventListener('mousemove', onMouseMove);
+                    console.log(event.path[0].style.left);
+                    if(event.path[0].style.left ){
+                        document.getElementById("slider").style.backgroundColor = "blue";
                     }
-                };
+                }
+                
+                
+            };
 
             thumb.ondragstart = function() {
                 return false;

@@ -7,7 +7,7 @@
 } 
 
 .sliderContainer {
-    width: 100%;
+    width: 250px;
     height: 10px;
     border-radius: 5px;
     background: red;
@@ -17,10 +17,9 @@
 .emojiSlider {
     width: 80px;
     height: 80px; 
-    border-radius: 100px;
     position: relative;
-    left: 50%;
+    left: 50px;
     top: -40px;
     background: url("assets/happy.png") center no-repeat;
-    cursor: pointer;
+    cursor: -webkit-grab;
   }
