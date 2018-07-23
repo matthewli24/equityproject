@@ -7,22 +7,20 @@
 } 
 
 .sliderContainer {
-    width: 310px;
-    height: 15px;
+    width: 100%;
+    height: 10px;
     border-radius: 5px;
-    background: #E0E0E0;
-    background: linear-gradient(left top, #E0E0E0, #EEEEEE);
+    background: red;
     margin: 5px;
   }
   
 .emojiSlider {
-    width: 10px;
-    height: 25px;
-    
-    border-radius: 3px;
+    width: 30px;
+    height: 30px; 
+    border-radius: 100px;
     position: relative;
-    left: 10px;
-    top: -5px;
+    left: 50%;
+    top: -10px;
     background: blue;
     cursor: pointer;
   }
