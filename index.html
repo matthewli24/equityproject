@@ -7,15 +7,29 @@
     </head>
 
     <body>
-        <div id="slider" class="sliderContainer">
-            <div class="emojiSlider"></div>
+
+        <div class="wrapper">
+            <div id="slider" class="sliderContainer">
+                <div class="emojiSlider"></div>
+                <form>
+                    <input 
+                        type="text" 
+                        placeholder="OPTIONAL" 
+                        class="optText"><br>
+                 
+                    <input type="submit" value="Submit">
+                </form>
+
+            </div>
         </div>
-        
+
         <script>
             let thumb = slider.querySelector('.emojiSlider');
       
             thumb.onmousedown = function(event) {
-                console.log(event);
+
+                //console.log(event);
+
                 event.preventDefault(); // prevent selection start (browser action)
             
                 let shiftX = event.clientX - thumb.getBoundingClientRect().left;
